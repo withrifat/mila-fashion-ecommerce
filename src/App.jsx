@@ -1,16 +1,8 @@
-import './App.css';
-import Header from './components/Header';
-import SectionOne from './components/SectionOne';
-import SectionTwo from './components/SectionTwo';
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Header />
-      <SectionOne/>
-      <SectionTwo/>
-    </>
+    <div className="App">
+      <h1 className="bg-black text-amber-50">Welcome to the App</h1>
+      <p>This is a simple React application.</p>
+    </div>
   );
 }
-
-export default App;

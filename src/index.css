@@ -1,2 +1,24 @@
 @import "tailwindcss";
 
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+    body {
+    @apply "Inter", sans-serif bg-zinc-900 text-zinc-50 h-[200vh]  ;
+  }
+}
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+  }
+}
